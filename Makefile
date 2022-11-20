@@ -12,3 +12,6 @@ publish: # без добавления в каталог PyPI
 
 package-install: # установка пакета из ОС
 	python3 -m pip install --user dist/*.whl
+
+make lint: # запуск линтера
+	poetry run flake8 brain_games
