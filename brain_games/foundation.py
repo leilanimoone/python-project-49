@@ -8,7 +8,7 @@ def brain_games(game):
     print(f'Hello, {name}!')
     print(game.task)
     for _ in range(attempts):
-        correct_answer, number = game.calc_game()
+        number, correct_answer = game.games()
         print(f'Question: {number}')
         answer = prompt.string('Your answer: ')
         if correct_answer == answer:

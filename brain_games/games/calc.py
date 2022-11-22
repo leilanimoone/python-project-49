@@ -2,7 +2,7 @@ from random import randint, choice
 task = 'What is the result of the expression?'
 
 
-def calc_game():
+def games():
     signs = ['+', '-', '*']
     first_number = randint(15, 30)
     second_number = randint(1, 15)
@@ -14,5 +14,4 @@ def calc_game():
         correct_answer = first_number - second_number
     else:
         correct_answer = first_number * second_number
-    return str(correct_answer), number
-
+    return number, str(correct_answer)
