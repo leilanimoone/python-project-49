@@ -1,13 +1,13 @@
 import prompt
-attempts = 3
+ATTEMPTS = 3
 
 
 def brain_games(game):
     print('Welcome to the Brain Games!')
     name = prompt.string('May I have your name? ')
     print(f'Hello, {name}!')
-    print(game.task)
-    for _ in range(attempts):
+    print(game.TASK)
+    for _ in range(ATTEMPTS):
         number, correct_answer = game.games()
         print(f'Question: {number}')
         answer = prompt.string('Your answer: ')
