@@ -2,7 +2,7 @@ from random import randint, choice
 TASK = 'What is the result of the expression?'
 
 
-def games():
+def generator():
     signs = ['+', '-', '*']
     first_number = randint(15, 30)
     second_number = randint(1, 15)

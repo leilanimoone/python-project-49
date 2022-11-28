@@ -2,7 +2,7 @@ from random import randint
 TASK = 'What number is missing in the progression?'
 
 
-def games():
+def generator():
     step = randint(2, 7)
     start = randint(1, 50)
     stop = randint(100, 200)
